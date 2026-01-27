@@ -4,10 +4,10 @@ CeeS Cntrl is a GUI interface to [Tubbutec's CeeS MIDI retrofit](https://tubbute
 CeeS Cntrl was created with the [Cabbage Audio Framework](https://cabbageaudio.com) 2.10.0. and can run as a DAW plug-in as either AU or VST, and as a standalone app on MacOS, WinOS and Linux machines. As a DAW plug-in all controls can be automated.
 
 An example patch:
-<img width="1058" height="644" alt="image" src="https://github.com/user-attachments/assets/31d90dbf-9562-4e99-8e33-421ff2ada482" />
+<img width="1058" height="644" alt="screengrab of the CeeS Cntrl main interface" src="https://github.com/user-attachments/assets/31d90dbf-9562-4e99-8e33-421ff2ada482" />
 
 Screengrab of the About CeeS Cntrl screen:
-<img width="1058" height="644" alt="image" src="https://github.com/user-attachments/assets/3567673e-f0eb-4db5-9542-de57c6fb5416" />
+<img width="1058" height="644" alt="Shows an informational overlay" src="https://github.com/user-attachments/assets/3567673e-f0eb-4db5-9542-de57c6fb5416" />
 
 ## Beta notes:
 
@@ -29,12 +29,11 @@ For the beta you must [download and install Cabbage](https://github.com/rorywals
 `~/.vst`
 
 **Tip**: If you try to run the plug-in and encounter permissions issues, go back to Cabbage and open the _Settings_ from the _Edit_ menu and make sure ad-hoc codesigning is enabled:\
-<img width="612" height="590" alt="adhocme" src="https://github.com/user-attachments/assets/451f4465-0099-4699-9c5e-66c1379f6ffc" />
+<img width="612" height="590" alt="Ad-hoc codesigning settings" src="https://github.com/user-attachments/assets/451f4465-0099-4699-9c5e-66c1379f6ffc" />
 
 
 ## Getting Started
 
 As seen in the About CeeS Cntrl screen, this is a patch recommendation for starting out with CeeS Cntrl. Note that only the top line of controls, plus VCA 1 and VCA 2 are employed to begin with. Such settings make your CeeS Cntrl changes more evident as you experiment and become more familiar with your CeeS MIDI retrofit. Make sure your Brilliance control is set somewhere between 50 and 100%.
-![layout](https://github.com/user-attachments/assets/66b9ee2a-558d-4f02-9736-f3fdbbc50be1)
 
-<img width="949" height="290" alt="image" src="https://github.com/user-attachments/assets/627ea956-71bb-4c17-ad20-79f6291e8792" />
+<img width="949" height="290" alt="Recommended patch to begin your exploration" src="https://github.com/user-attachments/assets/627ea956-71bb-4c17-ad20-79f6291e8792" />
