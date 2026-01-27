@@ -28,6 +28,10 @@ For Linux:
 * The CeeSCntrl.vst file must be placed in:
 `~/.vst`
 
+Tip: If you try to run the plug-in and encounter permissions issues, go back to Cabbage and open the Settings from teh Edit menu and make sure adhoc codesigning is enabled:
+<img width="612" height="590" alt="adhocme" src="https://github.com/user-attachments/assets/451f4465-0099-4699-9c5e-66c1379f6ffc" />
+
+
 ## Getting Started
 
 As seen in the About CeeS Cntrl screen, this is a patch recommendation for starting out with CeeS Cntrl, based on the Yamaha CS-15 patch sheet. Such settings make your CeeS Cntrl changes more evident as you experiment. Make sure your Brilliance control is set somewhere between 50 and 100%.
