@@ -17,16 +17,16 @@ For the beta you must [download and install Cabbage](https://github.com/rorywals
 
 For MacOS:
 * AU: The CeeSCntrl.component file must be placed in:
-~/Library/Audio/Plug-Ins/Components 
+`~/Library/Audio/Plug-Ins/Components` 
 * VST: The CeeSCntrl.vst file must be placed in:
-~/Library/Audio/Plug-Ins/VST 
+`~/Library/Audio/Plug-Ins/VST` 
 
 For WinOS:
 * TBD
 
 For Linux: 
 * The CeeSCntrl.vst file must be placed in:
-~/.vst
+`~/.vst`
 
 ## Getting Started
 
