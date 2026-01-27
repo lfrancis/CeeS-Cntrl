@@ -13,7 +13,7 @@ Screengrab of the About CeeS Cntrl screen:
 
 I'm a Logic Pro user so most testing has been done on an M1 Pro MBP 32/1T Tahoe 26.2 running Logic Pro 11.2.2. It would be great to see how the app performs in other environments and platforms. Please post any issues or questions to this repo's [Issues](https://github.com/lfrancis/CeeS-Cntrl/issues) tracker.
 
-For the beta you must [download and install Cabbage](https://github.com/rorywalsh/cabbage/releases) on your machine, then download the CeeSCntrl.csd file and assets from this repository, open the .csd in Cabbage and export the type of app you want to use, plug-in or standalone, from Cabbage's File menu. You must then copy the exported file to the appropriate location on your machine. 
+For the beta you must [download and install Cabbage](https://github.com/rorywalsh/cabbage/releases) on your machine, then download the CeeSCntrl.csd file and assets from this repository, open the .csd in Cabbage and export the type of app you want to use, plug-in or standalone, from Cabbage's _File_ menu. You must then copy the exported file to the appropriate location on your machine. 
 
 For MacOS:
 * AU: The CeeSCntrl.component file must be placed in:
@@ -28,7 +28,7 @@ For Linux:
 * The CeeSCntrl.vst file must be placed in:
 `~/.vst`
 
-Tip: If you try to run the plug-in and encounter permissions issues, go back to Cabbage and open the Settings from teh Edit menu and make sure adhoc codesigning is enabled:
+Tip: If you try to run the plug-in and encounter permissions issues, go back to Cabbage and open the _Settings_ from the _Edit_ menu and make sure ad-hoc codesigning is enabled:
 <img width="612" height="590" alt="adhocme" src="https://github.com/user-attachments/assets/451f4465-0099-4699-9c5e-66c1379f6ffc" />
 
 
