@@ -26,7 +26,8 @@ For the beta you must [download and install Cabbage](https://github.com/rorywals
 `~/Library/Audio/Plug-Ins/VST` 
 
 **WinOS**:
-* The `CeeSCntrl.vst` file must be placed in: TBD
+* The `CeeSCntrl.vst` file must be placed in: 
+`C:\Program Files\VSTPlugins` or `C:\Program Files\Steinberg\VstPlugins`
 
 **Linux**: 
 * The `CeeSCntrl.vst` file must be placed in:
