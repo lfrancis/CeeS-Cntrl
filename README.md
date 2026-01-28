@@ -39,7 +39,7 @@ For the beta you must [download and install Cabbage](https://github.com/rorywals
 
 ## Getting Started
 
-As seen in the About CeeS Cntrl screen, this is a patch recommendation for starting out with CeeS Cntrl. It takes into account how CeeS changes are additive for most of the supported controls, while subtractive for Resonance. Note that only the top line of controls, plus VCA 1 and VCA 2, are employed at start. Such settings make your CeeS Cntrl changes more evident as you experiment and become familiar with your retrofit. **Important**: Make sure your Brilliance control is set somewhere between 50 and 100%.
+As seen in the About CeeS Cntrl screen, this is a patch recommendation for starting out with CeeS Cntrl. It takes into account how CeeS changes are additive for most of the supported controls, while subtractive for Resonance. Note that only the top line of controls, plus EG 1 and 2, are employed at start. Such settings make your CeeS Cntrl changes more evident as you experiment and become familiar with your retrofit. **Important**: Make sure your Brilliance control is set somewhere between 50 and 100%.
 
 <img width="949" height="290" alt="Recommended patch to begin your exploration" src="https://github.com/user-attachments/assets/627ea956-71bb-4c17-ad20-79f6291e8792" />
 
