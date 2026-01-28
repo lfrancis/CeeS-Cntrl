@@ -1,7 +1,7 @@
 # CeeS-Cntrl
 CeeS Cntrl is a GUI interface to [Tubbutec's CeeS MIDI retrofit](https://tubbutec.de/cees/) for Yamaha CS5, CS10, CS15, CS15D, CS30 and CS30L synthesizers, adding MIDI input and output as well as additional filter modulation sources. 
 
-The interface follows the [CeeS MIDI implementation spec](https://tubbutec.de/files/CeeS/CeeS-user-guide.pdf) and maps MIDI CC values to knobs, buttons and menus that can then be automated in a DAW. The app is resizable and the _About CeeS Cntrl_ screen displays credits and a starter patch for easy reference.
+The interface follows the [CeeS MIDI implementation spec](https://tubbutec.de/files/CeeS/CeeS-user-guide.pdf) and maps MIDI CC values to knobs, buttons and menus that can then be automated in a DAW. The app is resizable and the _About CeeS Cntrl_ screen displays credits and a starter patch for easy reference. Double-clicking a knob will reset its value to zero.
 
 CeeS Cntrl was created with the [Cabbage Audio Framework](https://cabbageaudio.com) 2.10.0 and can run as a DAW plug-in as either AU or VST, and as a standalone app on MacOS, WinOS and Linux machines. 
 
