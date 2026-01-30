@@ -45,7 +45,7 @@ As seen in the About CeeS Cntrl screen, this is a patch recommendation for start
 
 ## DAW Notes
 
-**Logic Pro**: You must export the app as an _AU MIDI Effect_ type plug-in. After launching Logic and clicking your channel _MIDI FX_ plug-in button, search for the app by name or drill down to the _Audio Units > CabbageAudio >_ folder. Apply this plug-in to the region hosting your CS synth MIDI track.
+**Logic Pro**: You must export the app as an _AU MIDI Effect_ type plug-in. After launching Logic and clicking your channel strip _MIDI FX_ plug-in button, search for the app by name or drill down to the _Audio Units > CabbageAudio >_ folder. Apply this plug-in to the region hosting your CS synth MIDI track.
 
 **Ableton Live**: TBD
 
