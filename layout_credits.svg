@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1122.5197 793.70081"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="layout_credits.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.78395062"
+     inkscape:cx="662.66929"
+     inkscape:cy="-49.110236"
+     inkscape:window-width="2131"
+     inkscape:window-height="1210"
+     inkscape:window-x="20"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="a2" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <a
+       id="a2"
+       xlink:href="https://tubbutec.de/cee">
+      <text
+         xml:space="preserve"
+         style="font-size:18.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;writing-mode:lr-tb;direction:ltr;fill:#000000"
+         x="19.133858"
+         y="24.236219"
+         id="text1"><tspan
+           sodipodi:role="line"
+           x="19.133858"
+           y="24.236219"
+           id="tspan3">CeeS Cntrl, (C) copyright 2026, Lewis Francis</tspan><tspan
+           sodipodi:role="line"
+           x="19.133858"
+           y="47.569595"
+           id="tspan2">A GUI interface to Tubbutec's CeeS MIDI retrofit for Yamaha CS5, CS10, CS15, CS15D, CS30 and CS30L synthesizers, </tspan><tspan
+           sodipodi:role="line"
+           x="19.133858"
+           y="70.902969"
+           id="tspan10">adding MIDI input and output as well as additional filter modulation sources. https://tubbutec.de/cees    </tspan></text>
+    </a>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-family:sans-serif;-inkscape-font-specification:sans-serif;writing-mode:lr-tb;direction:ltr;fill:#000000"
+       x="16.582678"
+       y="51.023621"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan11" /></text>
+  </g>
+</svg>

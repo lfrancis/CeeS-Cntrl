@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1122.5197 793.70081"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="layout_credits2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.78395062"
+     inkscape:cx="930.5433"
+     inkscape:cy="343.77165"
+     inkscape:window-width="2131"
+     inkscape:window-height="1210"
+     inkscape:window-x="20"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="a2" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <a
+       id="a2"
+       xlink:href="https://tubbutec.de/cee">
+      <text
+         xml:space="preserve"
+         style="font-size:18.6667px;line-height:1.1;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000"
+         x="1020.7099"
+         y="24.236219"
+         id="text1"><tspan
+           sodipodi:role="line"
+           x="1020.7099"
+           y="24.236219"
+           id="tspan12"
+           style="line-height:1.1">v1.0.0, released 2026</tspan><tspan
+           sodipodi:role="line"
+           x="1020.7099"
+           y="44.769588"
+           id="tspan1"
+           style="line-height:1.1">The code for this app is released under the terms of the GPL; created with the Cabbage Audio Framework.</tspan><tspan
+           sodipodi:role="line"
+           x="1027.2725"
+           y="65.302963"
+           id="tspan10"
+           style="line-height:1.1">   </tspan></text>
+    </a>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-family:sans-serif;-inkscape-font-specification:sans-serif;writing-mode:lr-tb;direction:ltr;fill:#000000"
+       x="16.582678"
+       y="51.023621"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan11" /></text>
+  </g>
+</svg>
