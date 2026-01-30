@@ -3,7 +3,7 @@ CeeS Cntrl is a GUI interface to [Tubbutec's CeeS MIDI retrofit](https://tubbute
 
 The interface follows the [CeeS MIDI controller chart](https://tubbutec.de/files/CeeS/CeeS-user-guide.pdf) and maps MIDI CC values to knobs, buttons and menus that can then be [automated in a DAW](https://youtu.be/y1mWWRdPxyk). The app is resizable and the _About CeeS Cntrl_ screen displays credits and a starter patch for easy reference. A printable version of the starter patch can be opened in your browser. Patches can be saved to the DAW host. Double-clicking a knob will reset its value to zero.
 
-CeeS Cntrl was created with the [Cabbage Audio Framework](https://cabbageaudio.com) 2.10.0 and can run as a DAW plug-in as either AU MIDI FX or VST, and as a standalone app on MacOS, WinOS and Linux machines. 
+CeeS Cntrl was created with the [Cabbage Audio Framework](https://cabbageaudio.com) 2.10.0 and can run as a DAW plug-in as either AU or VST, and as a standalone app on MacOS, WinOS and Linux machines. 
 
 An example patch:
 <img width="1060" height="743" alt="Screengrab of the CeeS Cntrl main interface" src="https://github.com/user-attachments/assets/61819d34-9f08-429c-a81f-3a8e889f4cba" />
