@@ -9,7 +9,7 @@ An example patch:
 <img width="1060" height="743" alt="Screengrab of the CeeS Cntrl main interface" src="https://github.com/user-attachments/assets/61819d34-9f08-429c-a81f-3a8e889f4cba" />
 
 The About CeeS Cntrl screen:
-<img width="1060" height="743" alt="Shows an informational overlay" src="https://github.com/user-attachments/assets/6705798d-c153-4729-8675-7836e9313453" />
+<img width="1060" height="743" alt="Shows an informational overlay" src="https://github.com/user-attachments/assets/2210c7df-3575-4ce8-b8dd-e1ac9172bfcf" />
 
 ## Beta notes:
 
