@@ -24,7 +24,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.78395062"
-     inkscape:cx="471.9685"
+     inkscape:cx="471.33071"
      inkscape:cy="213.66142"
      inkscape:window-width="2131"
      inkscape:window-height="1210"
@@ -45,20 +45,20 @@
        y="24.236219"
        id="text1"><tspan
          sodipodi:role="line"
-         id="tspan1"
          x="19.133858"
-         y="24.236219">When getting started it's probably best to work with a simplified patch, so here we have a single oscillator path: VCO 1, </tspan><tspan
+         y="24.236219"
+         id="tspan2">When getting started it's probably best to work with a simplified patch, so here we have a single oscillator path: EXT/Noise + VCO 1 </tspan><tspan
          sodipodi:role="line"
          x="19.133858"
          y="44.236221"
-         id="tspan2">EXT/Noise + VCO 1 fed to VCF 1 with Cut Off at zero and Resonance at 100%, set to LPF and modulated by EG1+, fed to VCA </tspan><tspan
+         id="tspan3">fed to VCF 1 with Cut Off at zero and Resonance at 100%, set to LPF and modulated by EG1+, fed to VCA 1 controlled by EG 2 set </tspan><tspan
          sodipodi:role="line"
          x="19.133858"
          y="64.236221"
-         id="tspan3">1 controlled by EG 2 set to a basic envelope with VCA 1's EG Depth at 50%; don't forget to set Brilliance at 50-100%. Such settings </tspan><tspan
+         id="tspan4">to a basic envelope with VCA 1's EG Depth at 50%; don't forget to set Brilliance at 50-100%. Such settings make your CeeS Cntrl </tspan><tspan
          sodipodi:role="line"
          x="19.133858"
          y="84.236221"
-         id="tspan4">make your CeeS Cntrl changes more evident as you experiment.</tspan></text>
+         id="tspan7">changes more evident as you experiment.</tspan></text>
   </g>
 </svg>
