@@ -52,4 +52,4 @@ As seen in the About CeeS Cntrl screen, this is a patch recommendation for start
 **Reaper**: TBD
 
 ## Operational Tips
-CeeS remembers received CC messages until they are overwritten or the synth is turned off. If you find things out of sync, save your current patch, power-cycle your CS to clear its memory, and then reload the oreviously saved patch to get back to where you left off. 
+CeeS remembers received CC messages until they are overwritten or the synth is turned off. If you find things out of sync, save your current patch, power-cycle your CS to clear its memory, and then reload the previously saved patch to restore to a stable state. 
