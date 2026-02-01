@@ -50,3 +50,6 @@ As seen in the About CeeS Cntrl screen, this is a patch recommendation for start
 **Ableton Live**: TBD
 
 **Reaper**: TBD
+
+## Troubleshooting
+CeeS remembers received CC messages until turned off. If you find things out of sync, save your current patch, power-cycle your CS, and reload the patch to get back to where you left off. 
