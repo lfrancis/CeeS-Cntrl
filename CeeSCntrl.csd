@@ -18,15 +18,16 @@ You should have received a copy of the GNU General Public License along with thi
 ; -- These settings make your CeeS Cntrl changes more evident as you experiment
 
 ; To do:
-; First launch display of help screen?
 ; Consolidate SVG?
 ; Create some presets for different common use cases
 ; Test standalone
 ; Test VST version
 
 
-<Cabbage> ;bounds(0, 0, 0, 0)
-form caption("CeeS Cntrl") size(1010, 570) colour(0, 0, 0, 128), bundle("layout.svg", "layout_patchtext.svg", "layout_credits.svg", "layout_credits2.svg", "layout_blocker.png"), guiMode("queue") pluginId("ex01")
+<Cabbage>
+form caption("CeeS Cntrl") size(1010, 570), bundle("bg.png", "layout.svg", "layout_patchtext.svg", "layout_credits.svg", "layout_credits2.svg", "layout_blocker.png"), guiMode("queue") pluginId("ex01")
+; Fix for Reaper's poor handling of alpha values
+image bounds(0, 0, 1020, 576), file("bg.png"), channel("bgpng")
 
 ; VCF1
 groupbox bounds(7, 8, 244, 550) channel("VCF1") colour(178, 171, 171, 128) text("VCF 1")  fontColour(255, 255, 255, 255){
@@ -37,15 +38,15 @@ rslider bounds(19, 160, 100, 100) channel("AttackVCF1") range(0, 127, 0, 1, 1) t
 rslider bounds(125, 160, 100, 100) channel("DecayVCF1") range(0, 127, 0, 1, 1) text("Decay") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(19, 268, 100, 100) channel("SustainVCF1") range(0, 127, 0, 1, 1) text("Sustain") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(125, 268, 100, 100) channel("ReleaseVCF1") range(0, 127, 0, 1, 1) text("Release") textColour(0, 255, 255, 255) popupText("0")
-rslider bounds(19, 376, 100, 100) channel("delayVCF1") range(0, 127, 0, 1, 1) text("ADSR Delay") textColour(0, 255, 255, 255) popupText("0")
+rslider bounds(19, 376, 100, 100) channel("DelayVCF1") range(0, 127, 0, 1, 1) text("ADSR Delay") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(125, 376, 100, 100) channel("AmountVCF1") range(0, 127, 0, 1, 1) text("ADSR Amount") textColour(0, 255, 255, 255) popupText("0")
-checkbox bounds(81, 496, 31, 31) channel("Invert1CheckBox")  colour:1(0, 255, 255, 128) shape("circle") 
+checkbox bounds(81, 496, 31, 31) channel("InvertEnvVCF1")  colour:1(0, 255, 255, 128) shape("circle") 
 label bounds(31, 502, 54, 16) channel("label1") text("Invert") fontStyle("plain") fontColour(0, 255, 255, 255)
-checkbox bounds(133, 496, 31, 31) channel("Loop1CheckBox") colour:1(0, 255, 255, 128)  shape("circle") 
+checkbox bounds(133, 496, 31, 31) channel("LoopVCF1") colour:1(0, 255, 255, 128)  shape("circle") 
 label bounds(160, 502, 54, 16) channel("label2") text("Loop") fontStyle("plain") fontColour(0, 255, 255, 255)
 }
 ; VCF2
-groupbox bounds(265, 8, 244, 550) channel("VCF2") colour(140, 140, 140, 128) text("VCF 2") fontColour(255, 255, 255, 255){
+groupbox bounds(264, 8, 244, 550) channel("VCF2") colour(140, 140, 140, 128) text("VCF 2") fontColour(255, 255, 255, 255){
 rslider bounds(19, 26, 100, 100) channel("Filter2Cutoff") range(0, 127, 0, 1, 1) text("CUT OFF FREQ") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(125, 26, 100, 100) channel("Filter2Resonance") range(0, 1, 0, 1, 0.001) text("RESONANCE") textColour(0, 255, 255, 255) popupText("0")
 groupbox bounds(0, 136, 244, 414) channel("ENV2")  text("ENV 2")  fontColour(255, 255, 255, 255) colour(82, 80, 80, 255)
@@ -53,12 +54,12 @@ rslider bounds(19, 160, 100, 100) channel("AttackVCF2") range(0, 127, 0, 1, 1) t
 rslider bounds(125, 160, 100, 100) channel("DecayVCF2") range(0, 127, 0, 1, 1) text("Decay") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(19, 268, 100, 100) channel("SustainVCF2") range(0, 127, 0, 1, 1) text("Sustain") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(125, 268, 100, 100) channel("ReleaseVCF2") range(0, 127, 0, 1, 1) text("Release") textColour(0, 255, 255, 255) popupText("0")
-rslider bounds(19, 376, 100, 100) channel("delayVCF2") range(0, 127, 0, 1, 1) text("ADSR Delay") textColour(0, 255, 255, 255) popupText("0")
+rslider bounds(19, 376, 100, 100) channel("DelayVCF2") range(0, 127, 0, 1, 1) text("ADSR Delay") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(125, 376, 100, 100) channel("AmountVCF2") range(0, 127, 0, 1, 1) text("ADSR Amount") textColour(0, 255, 255, 255) popupText("0")
-checkbox bounds(81, 496, 31, 31) channel("Invert2CheckBox") fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
-label bounds(31, 502, 54, 16) channel("label3") text("Invert") fontStyle("plain") fontColour(0, 255, 255, 255)
-checkbox bounds(133, 496, 31, 31) channel("Loop2CheckBox") colour:1(0, 255, 255, 128) shape("circle")
-label bounds(160, 502, 54, 16) channel("label4") text("Loop") fontStyle("plain") fontColour(0, 255, 255, 255)
+checkbox bounds(81, 496, 31, 31) channel("InvertEnvVCF2") fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
+label bounds(31, 502, 54, 16) channel("label3") text("Invert")  fontColour(0, 255, 255, 255)
+checkbox bounds(133, 496, 31, 31) channel("LoopVCF2") colour:1(0, 255, 255, 128) shape("circle")
+label bounds(160, 502, 54, 16) channel("label4") text("Loop")  fontColour(0, 255, 255, 255)
 }
 ; LFO1
 groupbox bounds(524, 8, 232, 335) channel("LFO1") colour(178, 171, 171, 128) text("LFO 1")  fontColour(255, 255, 255, 255)
@@ -68,10 +69,10 @@ combobox bounds(123, 156, 88, 20) channel("LFO1Divider") text("4 Bars", "3 Bars"
 rslider bounds(12, 30, 100, 100) channel("LFO1Freq") range(0, 127, 0, 1, 1) text("LFO 1 Freq") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(118, 30, 100, 100) channel("LFO1Delay") range(0, 127, 0, 2.5, 1) text("LFO 1 Delay") textColour(0, 255, 255, 255) popupText("0")
 label bounds(23, 198, 54, 16) channel("label5") text("Retrig") fontStyle("plain") fontColour(0, 255, 255, 255)
-checkbox bounds(75, 190, 31, 31) channel("LFO1RetriggerBtn")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
+checkbox bounds(75, 190, 31, 31) channel("LFO1Retrigger")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
 label bounds(156, 198, 45, 16) channel("label6") text("Sync") fontStyle("plain") fontColour(0, 255, 255, 255)
-checkbox bounds(126, 190, 31, 31) channel("LFO1SyncBtn")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
-rslider bounds(66, 226, 100, 100) channel("LFO1DepthA") range(0, 127, 0, 1, 1) text("VCF 1 Depth") textColour(0, 255, 255, 255) popupText("0")
+checkbox bounds(126, 190, 31, 31) channel("LFO1Sync")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
+rslider bounds(66, 226, 100, 100) channel("LFO1Depth") range(0, 127, 0, 1, 1) text("VCF 1 Depth") textColour(0, 255, 255, 255) popupText("0")
 label bounds(22, 140, 88, 16) channel("label10044") fontStyle("plain") fontColour(181, 226, 226, 255) text("LFO Shape") colour(0, 0, 0, 128)
 label bounds(123, 140, 88, 16) channel("label10045") fontStyle("plain") fontColour(181, 226, 226, 255) text("Divider") colour(0, 0, 0, 128)
 }
@@ -83,10 +84,10 @@ combobox bounds(123, 156, 88, 20) channel("LFO2Divider") text("4 Bars", "3 Bars"
 rslider bounds(12, 30, 100, 100) channel("LFO2Freq") range(0, 127, 0, 1, 1) text("LFO 2 Freq") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(118, 30, 100, 100) channel("LFO2Delay") range(0, 127, 0, 2.5, 1) text("LFO 2 Delay") textColour(0, 255, 255, 255) popupText("0")
 label bounds(23, 198, 54, 16) channel("label7") text("Retrig") fontStyle("plain") fontColour(0, 255, 255, 255)
-checkbox bounds(75, 190, 31, 31) channel("LFO2RetriggerBtn")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
+checkbox bounds(75, 190, 31, 31) channel("LFO2Retrigger")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
 label bounds(156, 198, 45, 16) channel("label8") text("Sync") fontStyle("plain") fontColour(0, 255, 255, 255)
-checkbox bounds(126, 190, 31, 31) channel("LFO2SyncBtn")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
-rslider bounds(66, 226, 100, 100) channel("LFO2DepthA") range(0, 127, 0, 1, 1) text("VCF 2 Depth") textColour(0, 255, 255, 255) popupText("0")
+checkbox bounds(126, 190, 31, 31) channel("LFO2Sync")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
+rslider bounds(66, 226, 100, 100) channel("LFO2Depth") range(0, 127, 0, 1, 1) text("VCF 2 Depth") textColour(0, 255, 255, 255) popupText("0")
 label bounds(22, 140, 88, 16) channel("label10046") fontStyle("plain") fontColour(181, 226, 226, 255) text("LFO Shape")  colour(0, 0, 0, 128)
 label bounds(123, 140, 88, 16) channel("label10047") fontStyle("plain") fontColour(181, 226, 226, 255) text("Divider") colour(0, 0, 0, 128)
 }
@@ -96,8 +97,8 @@ groupbox bounds(524, 358, 232, 197) channel("groupbox10042") text("Touch Sensing
 rslider bounds(12, 30, 100, 100) channel("VeloDepth") range(0, 127, 0, 1, 1) text("Velocity Depth") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(118, 30, 100, 100) channel("AftertouchDepth") range(0, 127, 0, 1, 1) text("Aftertouch Depth") textColour(0, 255, 255, 255) popupText("0")
 groupbox bounds(0, 135, 232, 62) channel("groupbox10043")  text("Destination") fontColour(181, 226, 226, 255) outlineColour(255, 255, 255, 128) alpha(0.8)
-combobox bounds(20, 162, 80, 20) channel("VelocityMenu") text("None", "Cutoff 1", "LFO 1 depth", "LFO 1 Speed", "Cutoff 2", "LFO 2 depth", "LFO 2 speed") value(1)
-combobox bounds(130, 162, 80, 20) channel("AftertouchMenu") text("None", "Cutoff 1", "LFO 1 depth", "LFO 1 Speed", "Cutoff 2", "LFO 2 depth", "LFO 2 speed") value(1)
+combobox bounds(20, 162, 80, 20) channel("VelocityTarget") text("None", "Cutoff 1", "LFO 1 depth", "LFO 1 Speed", "Cutoff 2", "LFO 2 depth", "LFO 2 speed") value(1)
+combobox bounds(130, 162, 80, 20) channel("AftertouchTarget") text("None", "Cutoff 1", "LFO 1 depth", "LFO 1 Speed", "Cutoff 2", "LFO 2 depth", "LFO 2 speed") value(1)
 }
 ; Sequencer (CS-30 only)
 groupbox bounds(771, 358, 232, 148) channel("groupbox10048") text("CS-30 Sequencer")  fontColour(255, 255, 255, 255) colour(53, 53, 53, 255)
@@ -116,13 +117,13 @@ button bounds(20, 24, 194, 24) channel("AboutCeeSCntrl") text("About CeeS Cntrl"
 
 }
 ; About CeeS overlay
-groupbox bounds(20, 20, 970, 513), channel("AboutBackground"), text("About CeeS Cntrl") colour(255, 255, 255, 255), lineThickness(0), fontColour(0, 0, 0, 128), visible(0), alpha(.96)  outlineThickness(5) outlineColour(238, 238, 238, 255) 8, 255) 
+groupbox bounds(20, 20, 970, 513), channel("AboutBackground"), text("About CeeS Cntrl") colour(255, 255, 255, 255), lineThickness(0), fontColour(0, 0, 0, 128), visible(0), alpha(0.96)  outlineThickness(5) outlineColour(238, 238, 238, 255) 8, 255) 
 {
 image bounds(4, 20, 960, 280), file("layout.svg"), channel("InitLayoutPanel"), visible(0) colour(115, 112, 112, 255) 
 image bounds(20, 310, 920, 80), file("layout_patchtext.svg"), channel("InitLayoutPanelB"), visible(0) colour(115, 112, 112, 255) 
 image bounds(20, 405, 800, 60), file("layout_credits.svg"), channel("InitLayoutPanelC"), visible(0) colour(115, 112, 112, 255) 
 ;image bounds(254, 476, 500, 30), file("layout_credits2.svg"), channel("InitLayoutPanelD"), visible(0) colour(115, 112, 112, 255) 
-image bounds(754, 392, 212, 236), file("layout_blocker.png"), channel("InitLayoutPanelE"), visible(0) colour(178, 171, 171, 128), alpha(.0)
+image bounds(754, 392, 212, 236), file("layout_blocker.png"), channel("InitLayoutPanelE"), visible(0) colour(178, 171, 171, 128), alpha(0)
 infobutton bounds(769, 480, 194, 24) channel("PrintPatchSheet") file("index.html") text("Print patch sheet"), visible(0), colour:1(63, 61, 61, 255)
 }
 
@@ -148,16 +149,16 @@ instr MIDIOUT
 ; Filter 1
     kCtrl71 chnget "Filter1Cutoff"
     kCtrl72 chnget "Filter1Resonance"
-    kCtrl73 chnget "LFO1DepthA"
-    kCtrl74 chnget "LFO2DepthA"
+    kCtrl73 chnget "LFO1Depth"
+    kCtrl74 chnget "LFO2Depth"
     kCtrl75 chnget "AttackVCF1"
     kCtrl76 chnget "DecayVCF1"
     kCtrl77 chnget "SustainVCF1"
     kCtrl78 chnget "ReleaseVCF1"
-    kCtrl79 chnget "delayVCF1"
+    kCtrl79 chnget "DelayVCF1"
     kCtrl80 chnget "AmountVCF1"
-    kCtrl81 chnget "Invert1CheckBox"
-    kCtrl82 chnget "Loop1CheckBox"
+    kCtrl81 chnget "InvertEnvVCF1"
+    kCtrl82 chnget "LoopVCF1"
 ; Setup checkbox toggles
     kCtrl81 = kCtrl81 * 64 ; Makes sure value is either 0 or 64
     kCtrl82 = kCtrl82 * 64
@@ -171,10 +172,10 @@ instr MIDIOUT
     kCtrl92 chnget "DecayVCF2"
     kCtrl93 chnget "SustainVCF2"
     kCtrl94 chnget "ReleaseVCF2"
-    kCtrl95 chnget "delayVCF2"
+    kCtrl95 chnget "DelayVCF2"
     kCtrl96 chnget "AmountVCF2"
-    kCtrl97 chnget "Invert2CheckBox"
-    kCtrl98 chnget "Loop2CheckBox"
+    kCtrl97 chnget "InvertEnvVCF2"
+    kCtrl98 chnget "LoopVCF2"
 ; Setup checkbox toggles    
     kCtrl97 = kCtrl97 * 64
     kCtrl98 = kCtrl98 * 64
@@ -184,8 +185,8 @@ instr MIDIOUT
     kCtrl104 chnget "LFO1Freq"
     kCtrl105 chnget "LFO1Divider"   
     kCtrl106 chnget "LFO1Delay"
-    kCtrl107 chnget "LFO1RetriggerBtn"
-    kCtrl108 chnget "LFO1SyncBtn"
+    kCtrl107 chnget "LFO1Retrigger"
+    kCtrl108 chnget "LFO1Sync"
 ; Setup checkbox toggles 
     kCtrl107 = kCtrl107 * 64
     kCtrl108 = kCtrl108 * 64
@@ -195,8 +196,8 @@ instr MIDIOUT
     kCtrl110 chnget "LFO2Freq"
     kCtrl111 chnget "LFO2Divider"
     kCtrl112 chnget "LFO2Delay"
-    kCtrl113 chnget "LFO2RetriggerBtn"
-    kCtrl114 chnget "LFO2SyncBtn"
+    kCtrl113 chnget "LFO2Retrigger"
+    kCtrl114 chnget "LFO2Sync"
 ; Setup checkbox toggles 
     kCtrl113 = kCtrl113 * 64
     kCtrl114 = kCtrl114 * 64
@@ -204,8 +205,8 @@ instr MIDIOUT
 ; Touch Sensing    
     kCtrl83 chnget "VeloDepth"
     kCtrl84 chnget "AftertouchDepth"
-    kCtrl85 chnget "VelocityMenu"
-    kCtrl86 chnget "AftertouchMenu"
+    kCtrl85 chnget "VelocityTarget"
+    kCtrl86 chnget "AftertouchTarget"
      
 ; Seq (CS-30)  
     kCtrl115 chnget "SeqDivider"
@@ -606,7 +607,7 @@ instr MIDIOUT
     endif
 ; Make label clicks toggle the state of their respective buttons
     SLabels[] fillarray "label1", "label2", "label3", "label4", "label5", "label6", "label7", "label8"
-    SButtons[] fillarray "Invert1CheckBox", "Loop1CheckBox", "Invert2CheckBox", "Loop2CheckBox", "LFO1RetriggerBtn", "LFO1SyncBtn", "LFO2RetriggerBtn", "LFO2SyncBtn"
+    SButtons[] fillarray "InvertEnvVCF1", "LoopVCF1", "InvertEnvVCF2", "LoopVCF2", "LFO1Retrigger", "LFO1Sync", "LFO2Retrigger", "LFO2Sync"
     ; Listen for a click on any of the labels in the array
     ; kIndex returns the position (0-7), kTrig is 1 only on the click cycle
     kIndex, kTrig cabbageChanged SLabels 
