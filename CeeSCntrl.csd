@@ -25,7 +25,7 @@ You should have received a copy of the GNU General Public License along with thi
 ; Test VST version
 
 
-<Cabbage> bounds(0, 0, 0, 0)
+<Cabbage> ;bounds(0, 0, 0, 0)
 form caption("CeeS Cntrl") size(1010, 570) colour(0, 0, 0, 128), bundle("layout.svg", "layout_patchtext.svg", "layout_credits.svg", "layout_credits2.svg", "layout_blocker.png"), guiMode("queue") pluginId("ex01")
 
 ; VCF1
@@ -40,9 +40,9 @@ rslider bounds(125, 268, 100, 100) channel("ReleaseVCF1") range(0, 127, 0, 1, 1)
 rslider bounds(19, 376, 100, 100) channel("delayVCF1") range(0, 127, 0, 1, 1) text("ADSR Delay") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(125, 376, 100, 100) channel("AmountVCF1") range(0, 127, 0, 1, 1) text("ADSR Amount") textColour(0, 255, 255, 255) popupText("0")
 checkbox bounds(81, 496, 31, 31) channel("Invert1CheckBox")  colour:1(0, 255, 255, 128) shape("circle") 
-label bounds(31, 502, 54, 16) channel("Invert1CheckBoxLabel") text("Invert") fontStyle("plain") fontColour(0, 255, 255, 255)
+label bounds(31, 502, 54, 16) channel("label1") text("Invert") fontStyle("plain") fontColour(0, 255, 255, 255)
 checkbox bounds(133, 496, 31, 31) channel("Loop1CheckBox") colour:1(0, 255, 255, 128)  shape("circle") 
-label bounds(160, 502, 54, 16) channel("Loop1CheckBoxLabel") text("Loop") fontStyle("plain") fontColour(0, 255, 255, 255)
+label bounds(160, 502, 54, 16) channel("label2") text("Loop") fontStyle("plain") fontColour(0, 255, 255, 255)
 }
 ; VCF2
 groupbox bounds(265, 8, 244, 550) channel("VCF2") colour(140, 140, 140, 128) text("VCF 2") fontColour(255, 255, 255, 255){
@@ -56,9 +56,9 @@ rslider bounds(125, 268, 100, 100) channel("ReleaseVCF2") range(0, 127, 0, 1, 1)
 rslider bounds(19, 376, 100, 100) channel("delayVCF2") range(0, 127, 0, 1, 1) text("ADSR Delay") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(125, 376, 100, 100) channel("AmountVCF2") range(0, 127, 0, 1, 1) text("ADSR Amount") textColour(0, 255, 255, 255) popupText("0")
 checkbox bounds(81, 496, 31, 31) channel("Invert2CheckBox") fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
-label bounds(31, 502, 54, 16) channel("Invert2CheckBoxLabel") text("Invert") fontStyle("plain") fontColour(0, 255, 255, 255)
+label bounds(31, 502, 54, 16) channel("label3") text("Invert") fontStyle("plain") fontColour(0, 255, 255, 255)
 checkbox bounds(133, 496, 31, 31) channel("Loop2CheckBox") colour:1(0, 255, 255, 128) shape("circle")
-label bounds(160, 502, 54, 16) channel("Loop2CheckBoxLabel") text("Loop") fontStyle("plain") fontColour(0, 255, 255, 255)
+label bounds(160, 502, 54, 16) channel("label4") text("Loop") fontStyle("plain") fontColour(0, 255, 255, 255)
 }
 ; LFO1
 groupbox bounds(524, 8, 232, 335) channel("LFO1") colour(178, 171, 171, 128) text("LFO 1")  fontColour(255, 255, 255, 255)
@@ -67,9 +67,9 @@ combobox bounds(22, 156, 88, 20) channel("LFO1Shape") text("Triangle", "Saw", "I
 combobox bounds(123, 156, 88, 20) channel("LFO1Divider") text("4 Bars", "3 Bars", "2.5 Bars", "2 Bars", "1.5 Bars", "1 Bar", "3/4", "1 T", "1/2", "3/8", "1/2 T", "1/4", "3/16", "1/4 T", "1/8", "3/32", "1/8 T", "1/16", "1/32") value(18)
 rslider bounds(12, 30, 100, 100) channel("LFO1Freq") range(0, 127, 0, 1, 1) text("LFO 1 Freq") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(118, 30, 100, 100) channel("LFO1Delay") range(0, 127, 0, 2.5, 1) text("LFO 1 Delay") textColour(0, 255, 255, 255) popupText("0")
-label bounds(23, 198, 54, 16) channel("RetrigLabel1") text("Retrig") fontStyle("plain") fontColour(0, 255, 255, 255)
+label bounds(23, 198, 54, 16) channel("label5") text("Retrig") fontStyle("plain") fontColour(0, 255, 255, 255)
 checkbox bounds(75, 190, 31, 31) channel("LFO1RetriggerBtn")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
-label bounds(156, 198, 45, 16) channel("SyncLabel1") text("Sync") fontStyle("plain") fontColour(0, 255, 255, 255)
+label bounds(156, 198, 45, 16) channel("label6") text("Sync") fontStyle("plain") fontColour(0, 255, 255, 255)
 checkbox bounds(126, 190, 31, 31) channel("LFO1SyncBtn")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
 rslider bounds(66, 226, 100, 100) channel("LFO1DepthA") range(0, 127, 0, 1, 1) text("VCF 1 Depth") textColour(0, 255, 255, 255) popupText("0")
 label bounds(22, 140, 88, 16) channel("label10044") fontStyle("plain") fontColour(181, 226, 226, 255) text("LFO Shape") colour(0, 0, 0, 128)
@@ -82,9 +82,9 @@ combobox bounds(22, 156, 88, 20) channel("LFO2Shape") text("Triangle", "Saw", "I
 combobox bounds(123, 156, 88, 20) channel("LFO2Divider") text("4 Bars", "3 Bars", "2.5 Bars", "2 Bars", "1.5 Bars", "1 Bar", "3/4", "1 T", "1/2", "3/8", "1/2 T", "1/4", "3/16", "1/4 T", "1/8", "3/32", "1/8 T", "1/16", "1/32") value(18)
 rslider bounds(12, 30, 100, 100) channel("LFO2Freq") range(0, 127, 0, 1, 1) text("LFO 2 Freq") textColour(0, 255, 255, 255) popupText("0")
 rslider bounds(118, 30, 100, 100) channel("LFO2Delay") range(0, 127, 0, 2.5, 1) text("LFO 2 Delay") textColour(0, 255, 255, 255) popupText("0")
-label bounds(23, 198, 54, 16) channel("RetrigLabel2") text("Retrig") fontStyle("plain") fontColour(0, 255, 255, 255)
+label bounds(23, 198, 54, 16) channel("label7") text("Retrig") fontStyle("plain") fontColour(0, 255, 255, 255)
 checkbox bounds(75, 190, 31, 31) channel("LFO2RetriggerBtn")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
-label bounds(156, 198, 45, 16) channel("SyncLabel2") text("Sync") fontStyle("plain") fontColour(0, 255, 255, 255)
+label bounds(156, 198, 45, 16) channel("label8") text("Sync") fontStyle("plain") fontColour(0, 255, 255, 255)
 checkbox bounds(126, 190, 31, 31) channel("LFO2SyncBtn")  fontColour:0(0, 255, 255, 255) colour:1(0, 255, 255, 128) fontColour:1(0, 255, 255, 255) shape("circle") 
 rslider bounds(66, 226, 100, 100) channel("LFO2DepthA") range(0, 127, 0, 1, 1) text("VCF 2 Depth") textColour(0, 255, 255, 255) popupText("0")
 label bounds(22, 140, 88, 16) channel("label10046") fontStyle("plain") fontColour(181, 226, 226, 255) text("LFO Shape")  colour(0, 0, 0, 128)
@@ -142,8 +142,7 @@ massign 0, 0 ; Stop MIDI from auto-triggering instruments
 instr MIDIOUT
 ; Captures incoming MIDI
     kStatus, kChan, kData1, kData2 midiin
-    
-; Immediately sends it back out to the host/external device
+; Immediately echo back out to the host/external device (otherwise, the plug-in traps MIDI playback)
     midiout kStatus, kChan, kData1, kData2
 
 ; Filter 1
@@ -604,6 +603,19 @@ instr MIDIOUT
         cabbageSet 1, "InitLayoutPanelE", sprintfk("visible(%d)", kInfoState)
         cabbageSet 1, "PrintPatchSheet", sprintfk("visible(%d)", kInfoState)
         cabbageSet 1, "AboutBackground", sprintfk("visible(%d)", kInfoState)
+    endif
+; Make label clicks toggle the state of their respective buttons
+    SLabels[] fillarray "label1", "label2", "label3", "label4", "label5", "label6", "label7", "label8"
+    SButtons[] fillarray "Invert1CheckBox", "Loop1CheckBox", "Invert2CheckBox", "Loop2CheckBox", "LFO1RetriggerBtn", "LFO1SyncBtn", "LFO2RetriggerBtn", "LFO2SyncBtn"
+    ; Listen for a click on any of the labels in the array
+    ; kIndex returns the position (0-7), kTrig is 1 only on the click cycle
+    kIndex, kTrig cabbageChanged SLabels 
+    if kTrig == 1 then
+        ; Identify the button associated with that label index
+        SSelectedBtn = SButtons[kIndex]    
+        ; Toggle the state
+        kCurrentState cabbageGetValue SSelectedBtn
+        cabbageSetValue SSelectedBtn, 1 - kCurrentState
     endif
 endin
 </CsInstruments>
