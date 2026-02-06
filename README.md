@@ -17,7 +17,7 @@ Thanks for participating!
 
 I'm a Logic Pro user so development and most testing has been done on an M1 Pro MBP 32/1T Tahoe 26.2 running Logic Pro 11.2.2 with my CS-15. It would be great to see how the app performs in other environments and platforms as well as other CS models. Please post any issues or questions to this repo's [Issues](https://github.com/lfrancis/CeeS-Cntrl/issues) tracker and include your synth model, OS and DAW versions.
 
-For the beta you must [download and install Cabbage 2.10.0](https://github.com/rorywalsh/cabbage/releases) on your machine, then [download the source code](https://github.com/lfrancis/CeeS-Cntrl/releases/tag/v1.0.0-beta.1.1), extract the `CeeSCntrl.csd` file and assets, open the `.csd` in Cabbage and export the type of app you want to use, plug-in or standalone, from Cabbage's _File_ menu. You must then copy the exported file to the appropriate location on your machine. 
+For the beta you must [download and install Cabbage 2.10.0](https://github.com/rorywalsh/cabbage/releases) on your machine, then [download the source code](https://github.com/lfrancis/CeeS-Cntrl/releases/tag/v1.0.0-beta.1.3), extract the `CeeSCntrl.csd` file and assets, open the `.csd` in Cabbage and export the type of app you want to use, plug-in or standalone, from Cabbage's _File_ menu. You must then copy the exported file to the appropriate location on your machine. 
 
 **MacOS**:
 * AU: The `CeeSCntrl.component` file must be placed in:
