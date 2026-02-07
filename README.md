@@ -21,9 +21,9 @@ For the beta you must [download and install Cabbage 2.10.0](https://github.com/r
 
 **MacOS**:
 * AU: The `CeeSCntrl.component` file must be placed in:
-`~/Library/Audio/Plug-Ins/Components` 
+`~/Library/Audio/Plug-Ins/Components` or `/Library/Audio/Plug-Ins/Components`
 * VST: The `CeeSCntrl.vst` file must be placed in:
-`~/Library/Audio/Plug-Ins/VST` 
+`~/Library/Audio/Plug-Ins/VST` or `/Library/Audio/Plug-Ins/VST` 
 
 **WinOS**:
 * The `CeeSCntrl.vst` file must be placed in: 
