@@ -49,7 +49,9 @@ As seen in the About CeeS Cntrl screen, this is a patch recommendation for start
 
 **Ableton Live**: TBD
 
-**Reaper**: TBD
+**Reaper**: Reaper Mac sees the AU version but not the VST for some reason.
+
+**Bitwig**: A synth VST3 appears to be working fine in Bitwig 5.3.13 on MacOS Tahoe.
 
 ## Operational Tips
 CeeS remembers received CC messages until they are overwritten or the synth is turned off. If you find things out of sync, save your current patch, power-cycle your CS to clear its memory, and then reload the previously saved patch to restore to a repeatable state. 
