@@ -37,9 +37,6 @@ MacOS users need to ad-hoc code sign the plug-ins with the following Terminal co
 * The `CeeSCntrl.vst` file must be placed in:
 `~/.vst`
 
-**Important for MAcOS Users**: 
-
-
 
 ## Getting Started
 
