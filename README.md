@@ -51,11 +51,11 @@ As seen in the About CeeS Cntrl screen, this is a patch recommendation for start
 
 **Logic Pro**: Export the app as an _AU MIDI Effect_ type plug-in. After launching Logic and clicking your channel strip _MIDI FX_ plug-in button, search for the app by name or drill down to the _Audio Units > CabbageAudio >_ folder. Apply this plug-in to the region hosting your CS synth MIDI track.
 
-**Ableton Live**: Export the app as a _VST3 Synth_ type plug-in. The VST3 shows up in Ableton but currently only the rotary controls in VCF 1 send data. 
+**Ableton Live**: Export the app as a _VST3 Synth_ type plug-in. The VST3 shows up in the _CabbageAudio_ folder and renders but currently only the rotary controls in VCF 1 send data. 
 
-**Reaper**: Reaper Mac sees the AU version but not the VST for some reason, so if this is your DAW then export as an _AU MIDI Effect_ type plug-in.
+**Reaper**: Reaper Mac sees the AU version but not the VST for some reason, so if this is your DAW then export as an _AU MIDI Effect_ type plug-in and flter plug-in view by AU.
 
-**Bitwig**: Export the app as a _VST3 Synth_ type plug-in. 
+**Bitwig**: Export the app as a _VST3 Synth_ type plug-in. The VST3 can be found in the _CabbageAudio_ folder
 
 ## Operational Tips
 CeeS remembers received CC messages until they are overwritten or the synth is turned off. If you find things out of sync, save your current patch, power-cycle your CS to clear its memory, and then reload the previously saved patch to restore to a repeatable state. 
