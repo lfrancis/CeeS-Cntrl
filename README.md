@@ -44,9 +44,12 @@ As seen in the About CeeS Cntrl screen, this is a patch recommendation for start
 
 <img width="949" height="290" alt="Recommended patch to begin your exploration" src="https://github.com/user-attachments/assets/627ea956-71bb-4c17-ad20-79f6291e8792" />
 
+## Operational Tips
+CeeS remembers received CC messages until they are overwritten or the synth is turned off. If you find things out of sync, save your current patch, power-cycle your CS to clear its memory, and then reload the previously saved patch to restore to a repeatable state. 
+
 ## DAW Notes
 
-**Logic Pro**: Export the app as an _AU MIDI Effect_ type plug-in. After launching Logic and clicking your channel strip _MIDI FX_ plug-in button, search for the app by name or drill down to the _Audio Units > CabbageAudio >_ folder. Apply this plug-in to the region hosting your CS synth MIDI track.
+**Logic Pro**: Export the app as an _AU MIDI Effect_ type plug-in. After launching Logic and clicking your channel strip _MIDI FX_ plug-in button, search for the app by name or drill down to the _Audio Units > CabbageAudio >_ folder. Apply this plug-in to the channels trip hosting your CS synth MIDI track.
 
 **Ableton Live**: Export the app as a _VST3 Synth_ type plug-in. The VST3 shows up in the _CabbageAudio_ folder and renders but currently [only the rotary controls in VCF 1 send data](https://github.com/lfrancis/CeeS-Cntrl/issues/3#issue-3913868321). 
 
@@ -54,5 +57,4 @@ As seen in the About CeeS Cntrl screen, this is a patch recommendation for start
 
 **Bitwig**: Export the app as a _VST3 Synth_ type plug-in. The VST3 can be found in the _CabbageAudio_ folder
 
-## Operational Tips
-CeeS remembers received CC messages until they are overwritten or the synth is turned off. If you find things out of sync, save your current patch, power-cycle your CS to clear its memory, and then reload the previously saved patch to restore to a repeatable state. 
+
