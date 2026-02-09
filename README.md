@@ -20,10 +20,14 @@ I'm a Logic Pro user so development and most testing has been done on an M1 Pro 
 For the beta you must [download and install Cabbage 2.10.0](https://github.com/rorywalsh/cabbage/releases) on your machine, then [download the source code](https://github.com/lfrancis/CeeS-Cntrl/releases), extract the `CeeSCntrl.csd` file and assets, open the `.csd` in Cabbage and export the type of app you want to use, plug-in or standalone, from Cabbage's _File_ menu. You must then copy the exported file to the appropriate location on your machine. 
 
 **MacOS**:
+
+MacOS users need to ad-hoc code sign the plug-ins with the following Terminal command: <br/>
+`codesign --force --sign - --timestamp=none  --deep /path/to/YourPlugin.plugin`
 * AU: The `CeeSCntrl.component` file must be placed in:
 `~/Library/Audio/Plug-Ins/Components` or `/Library/Audio/Plug-Ins/Components`
 * VST: The `CeeSCntrl.vst` file must be placed in:
-`~/Library/Audio/Plug-Ins/VST` or `/Library/Audio/Plug-Ins/VST` 
+`~/Library/Audio/Plug-Ins/VST3` or `/Library/Audio/Plug-Ins/VST3` 
+
 
 **WinOS**:
 * The `CeeSCntrl.vst` file must be placed in: 
@@ -33,8 +37,8 @@ For the beta you must [download and install Cabbage 2.10.0](https://github.com/r
 * The `CeeSCntrl.vst` file must be placed in:
 `~/.vst`
 
-**Tip**: If you try to run the plug-in and encounter permissions issues, go back to Cabbage and open the _Settings_ from the _Edit_ menu and make sure ad-hoc codesigning is enabled:\
-<img width="612" height="590" alt="Ad-hoc codesigning settings" src="https://github.com/user-attachments/assets/451f4465-0099-4699-9c5e-66c1379f6ffc" />
+**Important for MAcOS Users**: 
+
 
 
 ## Getting Started
@@ -45,13 +49,13 @@ As seen in the About CeeS Cntrl screen, this is a patch recommendation for start
 
 ## DAW Notes
 
-**Logic Pro**: You must export the app as an _AU MIDI Effect_ type plug-in. After launching Logic and clicking your channel strip _MIDI FX_ plug-in button, search for the app by name or drill down to the _Audio Units > CabbageAudio >_ folder. Apply this plug-in to the region hosting your CS synth MIDI track.
+**Logic Pro**: Export the app as an _AU MIDI Effect_ type plug-in. After launching Logic and clicking your channel strip _MIDI FX_ plug-in button, search for the app by name or drill down to the _Audio Units > CabbageAudio >_ folder. Apply this plug-in to the region hosting your CS synth MIDI track.
 
-**Ableton Live**: The VST3 shpws up in Ableton but only the rotary controls in VCF 1 send data. 
+**Ableton Live**: Export the app as a _VST3 Synth_ type plug-in. The VST3 shows up in Ableton but currently only the rotary controls in VCF 1 send data. 
 
-**Reaper**: Reaper Mac sees the AU version but not the VST for some reason.
+**Reaper**: Reaper Mac sees the AU version but not the VST for some reason, so if this is your DAW then export as an _AU MIDI Effect_ type plug-in.
 
-**Bitwig**: A synth VST3 appears to be working fine in Bitwig 5.3.13 on MacOS Tahoe.
+**Bitwig**: Export the app as a _VST3 Synth_ type plug-in. 
 
 ## Operational Tips
 CeeS remembers received CC messages until they are overwritten or the synth is turned off. If you find things out of sync, save your current patch, power-cycle your CS to clear its memory, and then reload the previously saved patch to restore to a repeatable state. 
