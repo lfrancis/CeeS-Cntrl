@@ -25,7 +25,7 @@ MacOS users need to ad-hoc code sign the plug-ins with the following Terminal co
 `codesign --force --sign - --timestamp=none  --deep /path/to/YourPlugin.plugin`
 * AU: The `CeeSCntrl.component` file must be placed in:
 `~/Library/Audio/Plug-Ins/Components` or `/Library/Audio/Plug-Ins/Components`
-* VST: The `CeeSCntrl.vst` file must be placed in:
+* VST: The `CeeSCntrl.vst3` file must be placed in:
 `~/Library/Audio/Plug-Ins/VST3` or `/Library/Audio/Plug-Ins/VST3` 
 
 
