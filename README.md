@@ -21,7 +21,7 @@ For the beta you must [download and install Cabbage 2.10.0](https://github.com/r
 
 **MacOS**:
 
-MacOS users need to ad-hoc code sign the plug-ins with the following Terminal command whre `/path/to/YourPlugin.plugin` is replaced with the actual path to your plug-in: <br/>
+MacOS users need to ad-hoc code sign the plug-ins with the following Terminal command where `/path/to/YourPlugin.plugin` is replaced with the actual path to your plug-in: <br/>
 `codesign --force --sign - --timestamp=none  --deep /path/to/YourPlugin.plugin`
 * AU: The `CeeSCntrl.component` file must be placed in:
 `~/Library/Audio/Plug-Ins/Components` or `/Library/Audio/Plug-Ins/Components`
