@@ -58,7 +58,7 @@ CeeS remembers received CC messages until they are overwritten or the synth is t
 **Bitwig**: Export the app as a _VST3 Synth_ type plug-in. The VST3 can be found in the _CabbageAudio_ folder.
 
 ## MacOS Binary notes
-The precompiled MacOS component, vst3 and standfalone app have not been signed/notarized and so to extract and run them you'll need to perform the following Terminal commands. Note if you compile them yourself this is unecessary.
+The precompiled MacOS component, vst3 and standalone app have not been signed/notarized and so to extract and run them you'll need to perform the following Terminal commands. Note if you compile them yourself this is unecessary.
 
 * Unzipping without Flags: Use xattr -d com.apple.quarantine /path/to/file.zip before unzipping. 
 * Removing Quarantine from an App or Plug-in: Use sudo xattr -r -d com.apple.quarantine /path/to/file.whatever.
