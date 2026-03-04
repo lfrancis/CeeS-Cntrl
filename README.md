@@ -49,7 +49,7 @@ CeeS remembers received CC messages until they are overwritten or the synth is t
 
 ## DAW Notes
 
-**Logic Pro**: Export the app as an _AU MIDI Effect_ type plug-in. After launching Logic and clicking your channel strip _MIDI FX_ plug-in button, search for the app by name or drill down to the _Audio Units > CabbageAudio >_ folder. Apply this plug-in to the channels trip hosting your CS synth MIDI track.
+**Logic Pro**: Requires Logic Pro 11.1.2 or later. Export the app as an _AU MIDI Effect_ type plug-in. After launching Logic and clicking your channel strip _MIDI FX_ plug-in button, search for the app by name or drill down to the _Audio Units > CabbageAudio >_ folder. Apply this plug-in to the channels trip hosting your CS synth MIDI track.
 
 **Ableton Live**: Export the app as a _VST3 Synth_ type plug-in. The VST3 shows up in the _CabbageAudio_ folder. [Route the MIDI data](https://github.com/lfrancis/CeeS-Cntrl/issues/3#issuecomment-3873433439) to a MIDI track that controls your CS synth. 
 
