@@ -53,7 +53,7 @@ CeeS remembers received CC messages until they are overwritten or the synth is t
 
 **Ableton Live**: Export the app as a _VST3 Synth_ type plug-in. The VST3 shows up in the _CabbageAudio_ folder. [Route the MIDI data](https://github.com/lfrancis/CeeS-Cntrl/issues/3#issuecomment-3873433439) to a MIDI track that controls your CS synth. 
 
-**Reaper**: Reaper Mac sees the AU version but not the VST for some reason, so if this is your DAW then export as an _AU MIDI Effect_ type plug-in and flter plug-in view by AU.
+**Reaper**: Export the app as a _VST3 Synth_ type plug-in and flter plug-in view by Cabbage. Make sure you route the MIDI output to your CS. 
 
 **Bitwig**: Export the app as a _VST3 Synth_ type plug-in. The VST3 can be found in the _CabbageAudio_ folder.
 
